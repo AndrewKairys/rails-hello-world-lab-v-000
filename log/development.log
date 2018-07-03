@@ -122,3 +122,15 @@ AbstractController::ActionNotFound (The action 'hello_world' could not be found 
 
 
   Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (1.7ms)
+
+
+Started GET "/hello_world" for 75.74.33.135 at 2018-07-03 20:28:51 +0000
+Processing by StaticController#hello_world as HTML
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+ActionView::MissingTemplate (Missing template static/hello_world with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/AndrewKairys/rails-hello-world-lab-v-000/app/views"
+):
+  app/controllers/static_controller.rb:5:in `hello_world'
+
+
