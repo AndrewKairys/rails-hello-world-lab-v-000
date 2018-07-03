@@ -1,7 +1,7 @@
 class StaticController < ApplicationController
   # Prevent CSRF attacks by raising an exception.
   # For APIs, you may want to use :null_session instead.
-  def helloworld
+  def hello_world
    render "static/hello_world"
  end
 end
